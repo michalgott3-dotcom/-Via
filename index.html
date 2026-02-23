@@ -7,20 +7,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet">
 <style>
   :root {
-    --cream: #faf6ef;
-    --warm-white: #fffdf9;
-    --ink: #1a1410;
-    --gold: #c9933a;
-    --gold-light: #e8bf7a;
-    --rust: #b5541c;
-    --sage: #5a7a5c;
-    --dusty-rose: #c47b6e;
-    --deep-teal: #2d5a5e;
-    --lavender: #7a6b8a;
+    --cream: #f0f4fa;
+    --warm-white: #f7f9fd;
+    --ink: #001a4d;
+    --gold: #002878;
+    --gold-light: #3a5fa0;
+    --rust: #001a55;
+    --sage: #c8c800;
+    --dusty-rose: #3c64a0;
+    --deep-teal: #002878;
+    --lavender: #1a3f8a;
     --card-bg: #ffffff;
-    --border: rgba(201,147,58,0.25);
-    --shadow: 0 4px 30px rgba(26,20,16,0.08);
-    --shadow-heavy: 0 12px 60px rgba(26,20,16,0.15);
+    --border: rgba(0,40,120,0.18);
+    --shadow: 0 4px 30px rgba(0,30,100,0.08);
+    --shadow-heavy: 0 12px 60px rgba(0,30,100,0.15);
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,9 +39,9 @@
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background: 
-      radial-gradient(ellipse at 15% 20%, rgba(201,147,58,0.06) 0%, transparent 55%),
-      radial-gradient(ellipse at 85% 70%, rgba(45,90,94,0.06) 0%, transparent 55%),
-      radial-gradient(ellipse at 50% 50%, rgba(90,122,92,0.03) 0%, transparent 70%);
+      radial-gradient(ellipse at 15% 20%, rgba(0,40,120,0.06) 0%, transparent 55%),
+      radial-gradient(ellipse at 85% 70%, rgba(200,200,0,0.06) 0%, transparent 55%),
+      radial-gradient(ellipse at 50% 50%, rgba(0,40,120,0.03) 0%, transparent 70%);
     pointer-events: none;
     z-index: 0;
   }
@@ -92,7 +92,7 @@
   .hero-subtitle {
     font-size: 1.1rem;
     font-weight: 300;
-    color: rgba(26,20,16,0.65);
+    color: rgba(0,20,80,0.65);
     max-width: 520px;
     line-height: 1.7;
     margin-bottom: 40px;
@@ -101,7 +101,7 @@
   .hero-divider {
     width: 60px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    background: linear-gradient(90deg, transparent, #002878, transparent);
     margin: 0 auto 32px;
   }
 
@@ -134,19 +134,19 @@
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 20px rgba(201,147,58,0.35);
+    box-shadow: 0 4px 20px rgba(0,40,120,0.35);
     letter-spacing: 0.05em;
   }
   .btn-primary:hover {
     background: var(--rust);
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(201,147,58,0.45);
+    box-shadow: 0 8px 30px rgba(0,40,120,0.45);
   }
 
   .hero-note {
     margin-top: 20px;
     font-size: 0.82rem;
-    color: rgba(26,20,16,0.45);
+    color: rgba(0,20,80,0.45);
   }
 
   /* ===== QUESTIONNAIRE ===== */
@@ -177,19 +177,19 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    color: rgba(26,20,16,0.5);
+    color: rgba(0,20,80,0.5);
     margin-bottom: 8px;
   }
 
   .progress-bar {
     height: 4px;
-    background: rgba(201,147,58,0.15);
+    background: rgba(0,40,120,0.12);
     border-radius: 2px;
     overflow: hidden;
   }
   .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, var(--gold-light), var(--gold));
+    background: linear-gradient(90deg, #3a5fa0, #002878);
     border-radius: 2px;
     transition: width 0.5s ease;
   }
@@ -221,7 +221,7 @@
 
   .section-desc {
     font-size: 0.85rem;
-    color: rgba(26,20,16,0.55);
+    color: rgba(0,20,80,0.55);
     margin-bottom: 16px;
     line-height: 1.5;
   }
@@ -253,7 +253,7 @@
 
   .rating-label-lo, .rating-label-hi {
     font-size: 0.72rem;
-    color: rgba(26,20,16,0.45);
+    color: rgba(0,20,80,0.45);
     white-space: nowrap;
   }
 
@@ -354,7 +354,7 @@
 
   .results-subtitle {
     font-size: 1rem;
-    color: rgba(26,20,16,0.6);
+    color: rgba(0,20,80,0.6);
     line-height: 1.7;
     max-width: 560px;
     margin: 0 auto;
@@ -450,7 +450,7 @@
   .info-text {
     font-size: 0.95rem;
     line-height: 1.75;
-    color: rgba(26,20,16,0.8);
+    color: rgba(0,20,80,0.8);
   }
 
   .examples-list {
@@ -462,7 +462,7 @@
     gap: 10px;
     font-size: 0.9rem;
     line-height: 1.6;
-    color: rgba(26,20,16,0.75);
+    color: rgba(0,20,80,0.75);
     margin-bottom: 8px;
   }
   .examples-list li::before {
@@ -485,7 +485,7 @@
   .boost-card {
     border-radius: 12px;
     padding: 16px 18px;
-    background: rgba(201,147,58,0.04);
+    background: rgba(0,40,120,0.04);
     border: 1px solid var(--border);
   }
 
@@ -499,7 +499,7 @@
   .boost-card-text {
     font-size: 0.82rem;
     line-height: 1.6;
-    color: rgba(26,20,16,0.65);
+    color: rgba(0,20,80,0.65);
   }
 
   /* Cluster info box */
@@ -510,12 +510,12 @@
     margin-bottom: 4px;
     border: 1.5px solid var(--border);
   }
-  .cluster-box-wisdom { background: rgba(107,124,62,0.07); border-color: rgba(107,124,62,0.25); }
-  .cluster-box-courage { background: rgba(181,84,28,0.07); border-color: rgba(181,84,28,0.25); }
-  .cluster-box-humanity { background: rgba(196,123,110,0.07); border-color: rgba(196,123,110,0.25); }
-  .cluster-box-justice { background: rgba(45,90,94,0.07); border-color: rgba(45,90,94,0.25); }
-  .cluster-box-temperance { background: rgba(122,107,138,0.07); border-color: rgba(122,107,138,0.25); }
-  .cluster-box-transcendence { background: rgba(201,147,58,0.07); border-color: rgba(201,147,58,0.25); }
+  .cluster-box-wisdom { background: rgba(0,40,120,0.06); border-color: rgba(0,40,120,0.2); }
+  .cluster-box-courage { background: rgba(200,200,0,0.08); border-color: rgba(180,180,0,0.3); }
+  .cluster-box-humanity { background: rgba(0,60,140,0.06); border-color: rgba(0,60,140,0.2); }
+  .cluster-box-justice { background: rgba(0,40,120,0.08); border-color: rgba(0,40,120,0.25); }
+  .cluster-box-temperance { background: rgba(200,200,0,0.06); border-color: rgba(180,180,0,0.25); }
+  .cluster-box-transcendence { background: rgba(0,40,120,0.05); border-color: rgba(0,40,120,0.18); }
 
   .cluster-info-header {
     display: flex;
@@ -539,14 +539,14 @@
   .cluster-info-subdesc {
     font-size: 0.87rem;
     line-height: 1.6;
-    color: rgba(26,20,16,0.65);
+    color: rgba(0,20,80,0.65);
   }
   .cluster-strengths-label {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(26,20,16,0.45);
+    color: rgba(0,20,80,0.45);
     margin-bottom: 10px;
   }
   .cluster-strengths-tags {
@@ -559,19 +559,19 @@
     border-radius: 20px;
     font-size: 0.82rem;
     background: rgba(255,255,255,0.7);
-    border: 1px solid rgba(26,20,16,0.12);
-    color: rgba(26,20,16,0.6);
+    border: 1px solid rgba(0,20,80,0.12);
+    color: rgba(0,20,80,0.6);
   }
   .cluster-strength-pill.active-pill {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: white;
+    background: #c8c800;
+    border-color: #c8c800;
+    color: #1a1a00;
     font-weight: 700;
   }
 
   /* Synergy section */
   .synergy-card {
-    background: linear-gradient(135deg, var(--deep-teal), var(--sage));
+    background: linear-gradient(135deg, #002878, #1a3f8a);
     border-radius: 24px;
     padding: 40px 36px;
     color: white;
@@ -629,26 +629,26 @@
   .btn-restart:hover { background: var(--ink); color: white; }
 
   /* Color mapping for clusters */
-  .cluster-wisdom { color: #6b7c3e; }
-  .cluster-courage { color: #b5541c; }
-  .cluster-humanity { color: #c47b6e; }
-  .cluster-justice { color: #2d5a5e; }
-  .cluster-temperance { color: #7a6b8a; }
-  .cluster-transcendence { color: #c9933a; }
+  .cluster-wisdom { color: #002878; }
+  .cluster-courage { color: #8a8a00; }
+  .cluster-humanity { color: #003c8c; }
+  .cluster-justice { color: #002878; }
+  .cluster-temperance { color: #6b6b00; }
+  .cluster-transcendence { color: #1a3f8a; }
 
-  .bg-wisdom { background: rgba(107,124,62,0.12); color: #4a5c1f; }
-  .bg-courage { background: rgba(181,84,28,0.12); color: #b5541c; }
-  .bg-humanity { background: rgba(196,123,110,0.12); color: #a05040; }
-  .bg-justice { background: rgba(45,90,94,0.12); color: #1e5055; }
-  .bg-temperance { background: rgba(122,107,138,0.12); color: #5a4a6a; }
-  .bg-transcendence { background: rgba(201,147,58,0.12); color: #8a6010; }
+  .bg-wisdom { background: rgba(0,40,120,0.1); color: #002878; }
+  .bg-courage { background: rgba(200,200,0,0.18); color: #6b6b00; }
+  .bg-humanity { background: rgba(0,60,140,0.1); color: #003c8c; }
+  .bg-justice { background: rgba(0,40,120,0.12); color: #002878; }
+  .bg-temperance { background: rgba(200,200,0,0.14); color: #5a5a00; }
+  .bg-transcendence { background: rgba(0,40,120,0.08); color: #1a3f8a; }
 
-  .bar-wisdom { background: linear-gradient(90deg, #8fa050, #6b7c3e); }
-  .bar-courage { background: linear-gradient(90deg, #e07840, #b5541c); }
-  .bar-humanity { background: linear-gradient(90deg, #d89080, #c47b6e); }
-  .bar-justice { background: linear-gradient(90deg, #4a8a90, #2d5a5e); }
-  .bar-temperance { background: linear-gradient(90deg, #9a8aaa, #7a6b8a); }
-  .bar-transcendence { background: linear-gradient(90deg, #e8bf7a, #c9933a); }
+  .bar-wisdom { background: linear-gradient(90deg, #3a5fa0, #002878); }
+  .bar-courage { background: linear-gradient(90deg, #e0e000, #c8c800); }
+  .bar-humanity { background: linear-gradient(90deg, #4a70b0, #003c8c); }
+  .bar-justice { background: linear-gradient(90deg, #2a4fa0, #001a6e); }
+  .bar-temperance { background: linear-gradient(90deg, #d0d000, #a8a800); }
+  .bar-transcendence { background: linear-gradient(90deg, #5070b8, #002878); }
 
   .hidden { display: none !important; }
 
@@ -680,7 +680,7 @@
   .cluster-overview-desc {
     font-size: 0.87rem;
     line-height: 1.6;
-    color: rgba(26,20,16,0.6);
+    color: rgba(0,20,80,0.6);
     margin-bottom: 14px;
   }
   .cluster-overview-pills {
@@ -694,7 +694,7 @@
     font-size: 0.78rem;
     background: rgba(201,147,58,0.08);
     border: 1px solid var(--border);
-    color: rgba(26,20,16,0.65);
+    color: rgba(0,20,80,0.65);
   }
 </style>
 </head>
@@ -714,14 +714,14 @@
   </p>
   <button class="btn-primary" onclick="startQuiz()">התחל את השאלון</button>
   <p class="hero-note">24 חוזקות · כ-10 דקות · תוצאות מיידיות</p>
-  <p style="margin-top:10px;font-size:0.8rem;color:rgba(26,20,16,0.4);">השאלון מנוסח בלשון זכר אך מתייחס לשני המינים</p>
+  <p style="margin-top:10px;font-size:0.8rem;color:rgba(0,20,80,0.4);">השאלון מנוסח בלשון זכר אך מתייחס לשני המינים</p>
 </div>
 
 <!-- ===== QUIZ SCREEN ===== -->
 <div id="screen-quiz">
   <div class="quiz-header">
     <div class="quiz-title">ענה על השאלות הבאות</div>
-    <p style="font-size:0.85rem;color:rgba(26,20,16,0.5);margin-top:4px;">1 = כלל לא מתאר אותי &nbsp;|&nbsp; 5 = מתאר אותי מאוד</p>
+    <p style="font-size:0.85rem;color:rgba(0,20,80,0.5);margin-top:4px;">1 = מאד לא מתאים לי &nbsp;|&nbsp; 5 = מאד מתאים לי</p>
     <div class="progress-container">
       <div class="progress-label">
         <span>התקדמות</span>
@@ -758,7 +758,7 @@
     <div style="text-align:center;margin-bottom:32px;">
       <div class="results-tag">✦ 6 אשכולות החוזקות</div>
       <h3 style="font-family:'Amatic SC',cursive;font-size:clamp(1.6rem,4vw,2.5rem);margin-bottom:10px;color:var(--ink);">לפני שנגלה את החוזקות שלך — הכר את האשכולות</h3>
-      <p style="font-size:0.95rem;color:rgba(26,20,16,0.6);line-height:1.7;max-width:560px;margin:0 auto;">24 חוזקות האופי מסווגות ל-6 אשכולות ערכיים. כל אשכול מייצג תחום אופי שונה ומכיל קבוצת חוזקות קרובות בטבען.</p>
+      <p style="font-size:0.95rem;color:rgba(0,20,80,0.6);line-height:1.7;max-width:560px;margin:0 auto;">24 חוזקות האופי מסווגות ל-6 אשכולות ערכיים. כל אשכול מייצג תחום אופי שונה ומכיל קבוצת חוזקות קרובות בטבען.</p>
     </div>
     <div id="clusters-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;"></div>
   </div>
@@ -778,7 +778,32 @@
 
   <div class="results-footer">
     <button class="btn-restart" onclick="restart()">↺ מלא שוב</button>
-    <p style="margin-top:32px;font-size:0.78rem;color:rgba(26,20,16,0.4);line-height:1.7;">
+
+    <!-- PDF Download -->
+    <div style="margin-top:32px;text-align:center;">
+      <button onclick="downloadPDF()" style="
+        background: linear-gradient(135deg, #002878, #1a3f8a);
+        color: white;
+        border: none;
+        padding: 16px 40px;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Varela Round', sans-serif;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 4px 20px rgba(0,40,120,0.35);
+        transition: all 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+      " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 30px rgba(0,40,120,0.45)'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(0,40,120,0.35)'">
+        ⬇ הורד את התוצאות שלך כ-PDF
+      </button>
+      <p style="margin-top:10px;font-size:0.78rem;color:rgba(0,20,80,0.4);">הדוח יכלול את שלוש חוזקות האופי המרכזיות שלך</p>
+    </div>
+
+    <p style="margin-top:32px;font-size:0.78rem;color:rgba(0,20,80,0.4);line-height:1.7;">
       כל הזכויות שמורות לארגון VIA Institute on Character ©<br>
       <a href="https://www.viacharacter.org" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:underline;">www.viacharacter.org</a>
     </p>
@@ -806,7 +831,7 @@ const STRENGTHS = [
     examples: ['מבלה שעות בקריאה על נושאים שלא חשב עליהם לפני כן', 'שואל "למה?" ו"איך?" על כמעט כל דבר', 'מתלהב מאוד מתחביבים ועניינים חדשים', 'נהנה מחוויות ממגוון תרבויות'],
     boost: ['קרא ספר על תחום לגמרי לא מוכר', 'שוחח עם אדם בעל השקפת עולם שונה לחלוטין', 'הירשם לקורס אונליין מתחום שאינך מכיר'],
     advantages: ['למידה מהירה יותר של מיומנויות', 'יכולת להסתגל לסביבות חדשות', 'שיחות מעשירות ומעניינות'],
-    questions: ['אני תמיד מעוניין ללמוד על נושאים חדשים', 'אני מתרגש כשאני מגלה מידע חדש שלא ידעתי']
+    questions: ['אני סקרן תמיד לגבי העולם', 'אני משתעמם בקלות']
   },
   {
     id: 'love_of_learning', cluster: 'wisdom',
@@ -815,7 +840,7 @@ const STRENGTHS = [
     examples: ['לוקח קורסים ורוכש כישורים שמעניינים אותו', 'מבלה זמן בספריות, מוזיאונים, אתרי ידע', 'ממשיך לחקור נושאים גם אחרי שהמטרה המיידית מושגת', 'אוסף עובדות ומידע ברוב הנושאים'],
     boost: ['הקדש 20 דקות ביום לנושא שתמיד רצית לדעת', 'למד מיומנות חדשה כל רבעון', 'הצטרף לקבוצת קריאה או חוג דיון'],
     advantages: ['מומחיות רחבה שניתן להשתמש בה', 'לפתח אפיקי קריירה חדשים', 'חיים עשירים ומלאי עניין'],
-    questions: ['אני אוהב ללמוד דברים חדשים בכל ההזדמנויות', 'אני מרגיש ריגוש כשאני שולט במיומנות חדשה']
+    questions: ['אני כולי התלהבות כאשר אני לומד משהו חדש', 'לעולם איני עושה מאמצים לבקר במוזיאונים או באתרי לימודיים אחרים']
   },
   {
     id: 'zest', cluster: 'wisdom',
@@ -824,7 +849,7 @@ const STRENGTHS = [
     examples: ['מצחיק ומעלה חיוכים', 'מוצא הומור גם במצבים קשים', 'מקל על מתח בחדר עם בדיחה', 'אחרים נהנים מחברתו'],
     boost: ['אסוף סיפורים מצחיקים שקרו לך', 'הביט על מצבים קשים כסיפור שתספר בעתיד', 'צפה בסטנד-אפ, קרא קומיקס, שחק'],
     advantages: ['יצירת אווירה חיובית וקלילה', 'סיוע בהתמודדות עם לחץ', 'מגביר קשרים חברתיים'],
-    questions: ['אני מביא הומור לחיי היומיום', 'אני יכול לצחוק על עצמי ועל מצבים']
+    questions: ['אני תמיד משתדל לשלב עבודה עם הנאה ומשחק', 'נדיר שאני אומר דברים מצחיקים']
   },
   {
     id: 'love', cluster: 'wisdom',
@@ -833,7 +858,7 @@ const STRENGTHS = [
     examples: ['משקיע זמן ואנרגיה רבה בקשרים אישיים', 'מרגיש שלמות כשהוא עם הקרובים אליו', 'זוכר פרטים קטנים על חיי אחרים', 'מרגיש מה שהאחר מרגיש בקלות'],
     boost: ['הקדש "זמן איכות" מלא נוכחות לאנשים שאהוב עליך', 'כתוב מכתב הוקרה לאדם שחשוב לך', 'אמר "אני אוהב אותך" בתדירות גבוהה יותר'],
     advantages: ['רשת תמיכה חזקה בזמנים קשים', 'קשרים עמוקים שמגנים מפני בדידות', 'חיים עם תחושת שייכות ומשמעות'],
-    questions: ['מערכות יחסים קרובות הן הדבר הכי חשוב בחיי', 'אני מרגיש שלם כשאני נותן ומקבל אהבה']
+    questions: ['ישנם אנשים בחיי שאכפת להם מרגשותי ומרווחתי לא פחות משאכפת להם מעצמם', 'אני מתקשה לקבל אהבה מאחרים']
   },
   {
     id: 'social_intelligence', cluster: 'wisdom',
@@ -842,7 +867,7 @@ const STRENGTHS = [
     examples: ['מזהה מה שאנשים מרגישים מבלי שיאמרו', 'מסתגל בקלות לסגנון שיחה שונה', 'מבין את הדינמיקה של קבוצות', 'יודע מתי להתעקש ומתי לסגת'],
     boost: ['תרגל הקשבה פעילה ללא תגובה', 'שאל שאלות עומק בשיחות', 'למד על שפת גוף ותקשורת לא-מילולית'],
     advantages: ['פתרון קונפליקטים ביעילות', 'יכולת להניע ולהשפיע על אחרים', 'הצלחה בסביבות חברתיות מגוונות'],
-    questions: ['אני מבין מה אנשים מרגישים גם ללא מילים', 'אני יודע כיצד להסתגל לאנשים ומצבים שונים']
+    questions: ['יהיה אשר יהיה מצבי החברתי ברגע נתון, תמיד אצליח להתאים את עצמי', 'אני לא מצטיין בזיהוי רגשות הזולת']
   },
   {
     id: 'wisdom_strength', cluster: 'wisdom',
@@ -851,7 +876,7 @@ const STRENGTHS = [
     examples: ['אחרים פונים אליו לייעוץ בקשיים', 'יכול להסביר דברים מורכבים בצורה פשוטה', 'מוצא דרך גם כשאין פתרון ברור', 'רואה מה שאחרים מפספסים'],
     boost: ['בקש מנטורינג או היה מנטור', 'כתוב מה למדת מניסיונות קשים', 'שים לב לתבניות חוזרות בחיים שלך'],
     advantages: ['יכולת לנווט בצורה טובה בשינויים', 'עזרה ממשית לאנשים הקרובים אליך', 'ראיית הזדמנויות שאחרים מפספסים'],
-    questions: ['אנשים אומרים לי שיש לי שיפוט טוב', 'אני רואה את הדברים בפרספקטיבה רחבה ועמוקה']
+    questions: ['אני מסוגל תמיד להתבונן בדברים ולראות את התמונה הכוללת', 'נדיר שאנשים באים אלי לבקש את עצתי']
   },
   {
     id: 'teamwork', cluster: 'courage',
@@ -860,7 +885,7 @@ const STRENGTHS = [
     examples: ['מחפש הצלחת הקבוצה על פני הצלחה אישית', 'לוקח אחריות על תפקידו בצוות', 'עוזר לחברי הצוות כשהם מתקשים', 'גאה בהישגים קולקטיביים'],
     boost: ['הצטרף לפרויקט שיתופי חדש', 'פרגן לחברי הצוות בפומבי', 'קח אחריות על אתגר שאחרים נמנעים ממנו'],
     advantages: ['יצירת סביבה שיתופית ופורייה', 'אמינות גבוהה בסביבות מקצועיות', 'הצלחות גדולות יותר ממה שניתן להשיג לבד'],
-    questions: ['אני עובד טוב בתוך קבוצה ומחויב למטרות הכלל', 'הצלחת הצוות חשובה לי לא פחות מהצלחתי האישית']
+    questions: ['אני ממצה את מלוא יכולתי בעבודה בקבוצה', 'אני מהסס להקריב את האינטרס האישי שלי לטובת הקבוצה שאני חלק ממנה']
   },
   {
     id: 'creativity', cluster: 'courage',
@@ -869,7 +894,7 @@ const STRENGTHS = [
     examples: ['יוצר פתרונות לא-קונבנציונליים בעבודה', 'מוצא דרכים חדשות לגשת לכל אתגר', 'אוהב לשלב רעיונות ממתחומים שונים', 'עושה דברים לא בדרך המקובלת'],
     boost: ['נסה פעילות אמנותית חדשה כל חודש', 'נהל יומן לרעיונות ומחשבות יצירתיות', 'הקדש זמן ל"יצירה" ללא מטרה מוגדרת'],
     advantages: ['מציאת פתרונות לבעיות מורכבות', 'הסתגלות מהירה לשינויים', 'הבאת ערך ייחודי לכל צוות'],
-    questions: ['אני מוצא דרכים מקוריות ויצירתיות לגשת לבעיות', 'אנשים פונים אלי כשהם צריכים רעיונות חדשים']
+    questions: ['אני אוהב לחשוב על דרכים חדשות לביצוע דברים', 'לרוב חבריי יש דמיון מפותח יותר משלי']
   },
   {
     id: 'wisdom_judgment', cluster: 'courage',
@@ -878,7 +903,7 @@ const STRENGTHS = [
     examples: ['שוקל כל צד של ויכוח לפני קבלת עמדה', 'מזהה פגמים בהיגיון של טיעונים', 'משנה דעתו לנוכח ראיות חדשות', 'אחרים מבקשים ממנו לנתח מצבים'],
     boost: ['תרגל "משחק מחשבתי של סנגור–קטגור" בנושאים שאתה בטוח בהם', 'קרא גישות מנוגדות לדעותיך', 'כתוב רשימת יתרונות וחסרונות לפני החלטה גדולה'],
     advantages: ['קבלת החלטות מיושבת יותר', 'זיהוי שגיאות לפני שמתרחשות', 'נמנע מהצטרפות לקבוצה בעיוורון'],
-    questions: ['אני בוחן מצבים מכל הכיוונים לפני שאני מחליט', 'אני שוקל ראיות בצורה הוגנת גם אם הן מנוגדות לדעתי']
+    questions: ['כאשר הנושא מחייב זאת, אני מסוגל לחשוב בצורה הגיונית מאוד', 'אני נוטה לשיפוטים מהירים']
   },
   {
     id: 'bravery', cluster: 'courage',
@@ -887,7 +912,7 @@ const STRENGTHS = [
     examples: ['מציג עמדה לא פופולרית בפגישה', 'ניגש לאתגרים פיזיים מפחידים', 'מוכן לעמוד לבד נגד הזרם', 'מספר לאנשים מה הוא חושב באמת'],
     boost: ['עשה פעולה אחת שמפחידה אותך כל שבוע', 'תרגל אמירת "לא" ו"אני לא מסכים"', 'ספר לעצמך סיפורי אומץ מהעבר'],
     advantages: ['אחרים סומכים עליך ומעריצים אותך', 'חי בהתאם לערכיך', 'פחות חרטות ב"הייתי צריך"'],
-    questions: ['אני מוכן לעמוד על עמדתי גם אם אחרים לא מסכימים', 'אני לא נרתע מאתגרים גדולים']
+    questions: ['פעמים רבות נקטתי עמדה גם מול התנגדות חזקה', 'כאב ואכזבה בדרך כלל מכריעים אותי']
   },
   {
     id: 'honesty', cluster: 'humanity',
@@ -896,7 +921,7 @@ const STRENGTHS = [
     examples: ['מעדיף לומר אמת לא נוחה על פני שקר נוח', 'מה שאתה רואה הוא מה שתקבל', 'שומר על הבטחות ברמה גבוהה', 'מרגיש אי-נוחות עם חנפנות'],
     boost: ['תרגל שיחות קשות בסביבה בטוחה', 'שים לב לרגעים שאתה "מסנן" את עצמך', 'הקדש זמן לזיהוי הערכים המרכזיים שלך'],
     advantages: ['מערכות יחסים עמוקות ואמינות', 'שקיפות שמונעת אי-הבנות', 'אנשים יכולים לסמוך עליך לחלוטין'],
-    questions: ['אני תמיד אומר את האמת גם אם זה לא נוח', 'אני מציג את עצמי בצורה אמיתית ולא מנסה להרשים']
+    questions: ['אני מקיים תמיד את הבטחותיי', 'חברי לא אומרים לי אף פעם שאני מעשי']
   },
   {
     id: 'kindness', cluster: 'humanity',
@@ -905,7 +930,7 @@ const STRENGTHS = [
     examples: ['עוזר לאנשים ספונטנית ללא בקשה', 'מתנדב ועוזר לקהילה', 'מקדיש זמן לאנשים זרים שזקוקים לעזרה', 'מרגיש טוב כשאחרים מצליחים'],
     boost: ['בצע מעשה חסד אנונימי אחד ביום', 'התנדב לעניין שחשוב לך', 'שים לב לאנשים שנמצאים לידך שצריכים עזרה'],
     advantages: ['יוצר אווירה חיובית בסביבתו', 'מחזק קשרים חברתיים', 'מחקרים מראים שעזרה לאחרים מגבירה אושר'],
-    questions: ['אני עוזר לאנשים ספונטנית, גם כשלא מבקשים', 'אני נהנה לטפל ולעזור לאנשים']
+    questions: ['בחודש האחרון התנדבתי לעזור לשכן', 'בדרך כלל אני לא מתלהב ממזל הטוב של אחרים באותה מידה כמו ממזלי הטוב']
   },
   {
     id: 'fairness', cluster: 'justice',
@@ -914,7 +939,7 @@ const STRENGTHS = [
     examples: ['מקבל החלטות על בסיס עקרונות ולא על בסיס חיבה', 'מתנגד לדעות קדומות ואפליה', 'נותן לכולם הזדמנות שווה להתבטא', 'מרגיש אי-נוחות כשמערכות אינן הוגנות'],
     boost: ['בחן את ההחלטות שלך להטיות ודעות קדומות', 'הקשיב לקבוצות שבדרך כלל לא שומעים', 'קרא על עקרונות צדק חברתי'],
     advantages: ['אמינות גבוהה בעיני כולם', 'יצירת סביבות שוויוניות ופרודוקטיביות', 'קבלת החלטות עם פחות הטיות'],
-    questions: ['אני מתייחס לכולם בצורה שוויונית ועקבית', 'חשוב לי מאוד שכולם יקבלו יחס הוגן']
+    questions: ['אני מתייחס באופן שוויוני לכל אדם, ואין זה משנה מי הוא או היא', 'כשאני לא מחבב אדם מסוים, קשה לי להתייחס אליו או אליה בהגינות']
   },
   {
     id: 'leadership', cluster: 'justice',
@@ -923,7 +948,7 @@ const STRENGTHS = [
     examples: ['לוקח יוזמה לארגן ולנהל קבוצות', 'מצליח להניע אנשים עם חזון', 'מיישב עימותים בצורה יעילה', 'יוצר מבנה ובהירות מהכאוס'],
     boost: ['מצא סיבה וקח אחריות על ניהולה', 'תרגל "הקשבה למנהיגות" — שאל לפני שאומר', 'למד על סגנונות מנהיגות שונים'],
     advantages: ['יכולת לממש חזון ולהניעו קדימה', 'השפעה רחבה על סביבתך', 'יצירת ערך עבור הקבוצה'],
-    questions: ['אני יודע כיצד לארגן ולנהל קבוצות', 'אני מיישב חיכוכים ומוביל לפתרון']
+    questions: ['אני מצליח תמיד לגרום לאנשים לעשות דברים ביחד, בלי לנדנד להם', 'אני לא מצטיין בארגון פעולות קבוצתיות']
   },
   {
     id: 'humility', cluster: 'temperance',
@@ -932,7 +957,7 @@ const STRENGTHS = [
     examples: ['לא מתהדר בהישגיו', 'מקשיב לביקורת ולומד ממנה', 'נותן קרדיט לאחרים', 'מחפש כל הזמן מה הוא לא יודע'],
     boost: ['שאל אחרים על החוזקות שלהם', 'תרגל הכרה בלמידה שלך מאחרים', 'הקדש קרדיט בפומבי לאחרים'],
     advantages: ['אנשים מרגישים בנוח לדבר איתך', 'פחות "עיוורות" של מנהיגות', 'קל יותר לשתף פעולה'],
-    questions: ['אני לא צריך להיות במרכז תשומת הלב', 'אני מכיר בטעויות שלי ולומד מהן']
+    questions: ['אני משנה נושא שיחה כאשר אנשים מתחילים להחמיא לי', 'אני מדבר לעיתים קרובות על הישגיי']
   },
   {
     id: 'forgiveness', cluster: 'temperance',
@@ -941,7 +966,7 @@ const STRENGTHS = [
     examples: ['משחרר עלבונות ופגיעות גם כשקשה', 'מסתכל על אנשים בנדיבות', 'לא מחזיק טינה', 'מאמין שאנשים יכולים להשתנות'],
     boost: ['תרגל "מכתב סליחה" שלא שולחים', 'שים לב לסיפור שאתה מספר לעצמך על אנשים', 'מדיטציית חמלה (Loving-Kindness)'],
     advantages: ['שחרור מנטל רגשי כבד', 'שמירה על מערכות יחסים חשובות', 'בריאות נפשית טובה יותר'],
-    questions: ['אני מסוגל לסלוח לאנשים שפגעו בי', 'אני לא מחזיק טינה לאחרים לאורך זמן']
+    questions: ['אני תמיד מניח לעברי', 'אני לעולם לא נשאר חייב']
   },
   {
     id: 'prudence', cluster: 'temperance',
@@ -950,7 +975,7 @@ const STRENGTHS = [
     examples: ['שוקל החלטות לפני ביצוע', 'לא פועל בדחף', 'חושב על ההשפעות ארוכות הטווח', 'שומר על עצמו מסכנות מיותרות'],
     boost: ['לפני החלטה גדולה, העדף "לישון עליה"', 'שאל "מה הצד השני של הטיעון?"', 'שים לב לנטיות אימפולסיביות שלך'],
     advantages: ['פחות טעויות ברות-מניעה', 'בקרה על מצבים פיננסיים ובריאותיים', 'אמינות ועמידה במילה שלך'],
-    questions: ['אני חושב לפני שאני פועל', 'אני לא לוקח סיכונים מיותרים']
+    questions: ['אני שולט ברגשותיי', 'בדרך כלל אני לא מסוגל להתמיד בדיאטה']
   },
   {
     id: 'perseverance', cluster: 'temperance',
@@ -959,7 +984,7 @@ const STRENGTHS = [
     examples: ['ממשיך בפרויקטים גם כשקשה', 'לא מוותר על מטרות ארוכות טווח', 'מגלה כוח לאחר כישלון ויוצא ממנו מחוזק', 'מסיים משימות גם ללא פיקוח'],
     boost: ['חלק יעדים גדולים למשימות קטנות יותר', 'שמור יומן הצלחות קטנות יומיומי', 'צור "שגרת התמדה" יומיומית'],
     advantages: ['השגת מטרות ארוכות טווח', 'אמינות גבוהה בעיני אחרים', 'כישורים עמוקים שנרכשים לאורך זמן'],
-    questions: ['אני מסיים מה שמתחיל, גם כשזה קשה', 'אני לא מרפה מיעד שחשוב לי']
+    questions: ['אני מסיים תמיד כל דבר שאני מתחיל', 'אני נוטה לסטות מהעבודה שאני מבצע']
   },
   {
     id: 'self_regulation', cluster: 'temperance',
@@ -968,7 +993,7 @@ const STRENGTHS = [
     examples: ['שומר על שגרה גם כשקשה', 'ניהול רגשות בזמנים סוערים', 'מציב גבולות לעצמו', 'לא "נשבר" בסביבות מפתות'],
     boost: ['תרגול מדיטציה קצר יומי', 'עקב אחר הרגלים עם אפליקציה', 'זיהוי הטריגרים שגורמים לאיבוד שליטה'],
     advantages: ['הגעה ליעדים ארוכי טווח', 'בריאות טובה יותר', 'יכולת לנהל לחץ בצורה טובה'],
-    questions: ['אני שולט בעצמי גם כשזה קשה', 'אני ממושמע ויכול לשמור על הרגלים']
+    questions: ['אני נמנע מפעילויות הכרוכות בסכנה פיזית', 'לפעמים אני עושה החלטות גרועות מאוד לגבי החברים שלי ובמערכות היחסים שלי']
   },
   {
     id: 'appreciation', cluster: 'transcendence',
@@ -977,7 +1002,7 @@ const STRENGTHS = [
     examples: ['נעצר להתבונן בשקיעה יפה', 'נרגש מנגינה, ציור או שיר', 'מעריך מלאכת יד ותכנון מעולה', 'מוצא יופי בדברים יומיומיים'],
     boost: ['קח "טיול יופי" שבועי לחפש משהו יפה', 'כתוב דברים שהרגשת כלפיהם התפעלות', 'בקר במוזיאון, קונצרט, או גינה בוטנית'],
     advantages: ['יכולת למצוא הנאה בכל מצב', 'מוטיבציה גבוהה בתחומי יצירה', 'תחושת אושר יומיומי'],
-    questions: ['אני מבחין ביופי סביבי ומתרגש ממנו', 'אמנות, טבע ויצירה ממלאים אותי']
+    questions: ['בחודש האחרון מצאתי את עצמי נפעם ממצוינות במוסיקה, באמנות, בתיאטרון, או בתחום אחר', 'בשנה האחרונה לא יצרתי שום דבר יפה']
   },
   {
     id: 'gratitude', cluster: 'transcendence',
@@ -986,7 +1011,7 @@ const STRENGTHS = [
     examples: ['כותב יומן תודה', 'מביע תודה מפורשת לאנשים', 'מבחין בטובות קטנות שאחרים עושים', 'מרגיש מבורך גם בתקופות קשות'],
     boost: ['כתוב 3 דברים שאתה אסיר תודה עליהם כל בוקר', 'שלח הודעת תודה אישית לאדם שעזר לך', 'הכר בדברים "הטריוויאליים" שאתה נהנה מהם'],
     advantages: ['שיפור משמעותי ברמת האושר', 'מערכות יחסים חזקות יותר', 'חוסן נפשי גבוה יותר'],
-    questions: ['אני חש הכרת תודה על הדברים הטובים בחיי', 'אני מביע תודה לאחרים על עזרה ותמיכה']
+    questions: ['אני אומר תודה תמיד, גם על דברים קטנים', 'בדרך כלל אני לא חושב על מזלי הטוב ועל הדברים הטובים בחיי']
   },
   {
     id: 'hope', cluster: 'transcendence',
@@ -995,7 +1020,7 @@ const STRENGTHS = [
     examples: ['גם בתקופות קשות רואה איך מתאוששים מהן', 'מציב יעדים ומאמין שאפשר להגיע אליהם', 'מדביק אנשים בתחושת אפשרות', 'לא משלים עם "ככה זה"'],
     boost: ['כתוב "מכתב לעתיד" עצמך עוד 5 שנים', 'חשוב על זמן שדברים השתפרו בו', 'הרצה של "תרחיש האפשרות הטובה ביותר"'],
     advantages: ['חוסן בזמנים קשים', 'יכולת לגייס אחרים לחזון', 'התמדה לאורך זמן'],
-    questions: ['אני מאמין שהעתיד יהיה טוב', 'אני פועל כדי שמטרות יתממשו']
+    questions: ['אני רואה תמיד את חצי הכוס המלא', 'בדרך כלל אין לי תכנית שהשקעתי בה מחשבה רבה, לגבי מה שברצוני לעשות בעתיד']
   },
   {
     id: 'energy', cluster: 'transcendence',
@@ -1004,7 +1029,7 @@ const STRENGTHS = [
     examples: ['מתעורר בהתרגשות לגבי היום', 'מדביק אחרים בהתלהבות שלו', 'פעיל פיזית ואוהב תנועה', 'מרגיש אנרגטי ומחויך ברוב הזמן'],
     boost: ['שמור על שגרת שינה ופעילות גופנית', 'גלה מה "מטעין אותך באנרגיה" ועשה יותר מזה', 'הוסף פעילות חדשה מרגשת לשגרה'],
     advantages: ['אנרגיה מדבקת שמשפיעה על הסביבה', 'חוסן גבוה בזמני קושי', 'ביצועים טובים יותר כי האנרגיה מרוכזת בעשייה'],
-    questions: ['אני ניגש לחיים עם חיוניות ואנרגיה', 'אני מרגיש נלהב לגבי הדברים שאני עושה']
+    questions: ['אני נותן את כל כולי בכל דבר שאני עושה', 'קורה לי הרבה שאני במצב רוח רע']
   },
   {
     id: 'spirituality', cluster: 'transcendence',
@@ -1013,7 +1038,7 @@ const STRENGTHS = [
     examples: ['תחושת שייכות למשהו גדול מעצמך', 'חיפוש משמעות ומטרה עמוקה', 'תחושת קשר לטבע, לאלוהים, לאנושות', 'שאלות עמוקות על חיים ומוות'],
     boost: ['תרגל מדיטציה או תפילה', 'בלה זמן בטבע עם תשומת לב מלאה', 'שאל את עצמך "מה המטרה שלי?"'],
     advantages: ['בסיס יציב בזמני קושי', 'משמעות עמוקה לחיים', 'תחושת חיבור לדבר גדול מעצמך'],
-    questions: ['אני מרגיש שלחיי יש משמעות ומטרה עמוקה', 'אני חש קשר לדבר גדול מממני']
+    questions: ['לחיים שלי יש מטרה רבת עוצמה', 'אין לי ייעוד בחיים']
   }
 ];
 
@@ -1044,13 +1069,13 @@ function renderQuestions() {
       card.innerHTML = `
         <div class="question-text">${q}</div>
         <div class="rating-scale">
-          <span class="rating-label-lo">כלל לא</span>
+          <span class="rating-label-lo">מאד לא מתאים</span>
           <div class="rating-buttons">
             ${[1,2,3,4,5].map(v => `
               <button class="rating-btn" data-qid="${qid}" data-val="${v}" onclick="rate('${qid}','${strength.id}',${v})">${v}</button>
             `).join('')}
           </div>
-          <span class="rating-label-hi">מאוד</span>
+          <span class="rating-label-hi">מאד מתאים</span>
         </div>
       `;
       section.appendChild(card);
@@ -1127,12 +1152,12 @@ function showResults(top3, totals) {
   const clustersGrid = document.getElementById('clusters-grid');
   clustersGrid.innerHTML = '';
   const clusterColorMap = {
-    wisdom: 'rgba(107,124,62,0.08)',
-    courage: 'rgba(181,84,28,0.08)',
-    humanity: 'rgba(196,123,110,0.08)',
-    justice: 'rgba(45,90,94,0.08)',
-    temperance: 'rgba(122,107,138,0.08)',
-    transcendence: 'rgba(201,147,58,0.08)'
+    wisdom: 'rgba(0,40,120,0.06)',
+    courage: 'rgba(200,200,0,0.08)',
+    humanity: 'rgba(0,60,140,0.06)',
+    justice: 'rgba(0,40,120,0.08)',
+    temperance: 'rgba(200,200,0,0.06)',
+    transcendence: 'rgba(0,40,120,0.05)'
   };
   Object.entries(CLUSTERS).forEach(([key, cluster]) => {
     const strengthsInCluster = STRENGTHS.filter(s => s.cluster === key).map(s => s.name);
@@ -1144,7 +1169,7 @@ function showResults(top3, totals) {
         <span class="cluster-overview-emoji">${cluster.emoji}</span>
         <div>
           <div class="cluster-overview-name">${cluster.name}</div>
-          <div style="font-size:0.75rem;color:rgba(26,20,16,0.45);font-weight:600;">${cluster.fullDesc}</div>
+          <div style="font-size:0.75rem;color:rgba(0,20,80,0.45);font-weight:600;">${cluster.fullDesc}</div>
         </div>
       </div>
       <div class="cluster-overview-desc">${cluster.desc}</div>
@@ -1277,6 +1302,41 @@ function restart() {
   document.getElementById('progress-fill').style.width = '0%';
   document.getElementById('progress-text').textContent = '0 / 24';
   document.getElementById('unanswered-note').style.display = 'none';
+}
+
+function downloadPDF() {
+  // Hide buttons for print
+  const btn = document.querySelector('[onclick="downloadPDF()"]').parentElement;
+  const restartBtn = document.querySelector('[onclick="restart()"]');
+  btn.style.display = 'none';
+  restartBtn.style.display = 'none';
+
+  // Add print styles temporarily
+  const style = document.createElement('style');
+  style.id = 'print-style';
+  style.textContent = `
+    @media print {
+      #screen-intro, #screen-quiz { display: none !important; }
+      #screen-results { display: block !important; }
+      body { background: white !important; }
+      body::before { display: none !important; }
+      .results-footer button { display: none !important; }
+      .strength-card { break-inside: avoid; box-shadow: none !important; border: 1px solid #ddd !important; }
+      .synergy-card { break-inside: avoid; }
+      @page { margin: 15mm; size: A4; }
+    }
+  `;
+  document.head.appendChild(style);
+
+  window.print();
+
+  // Restore after print
+  setTimeout(() => {
+    btn.style.display = '';
+    restartBtn.style.display = '';
+    const ps = document.getElementById('print-style');
+    if (ps) ps.remove();
+  }, 1000);
 }
 </script>
 </body>
